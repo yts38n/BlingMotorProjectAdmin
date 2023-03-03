@@ -1,0 +1,29 @@
+---
+title: 機妍 專業機車美容
+layout: ./app/layout.ejs
+engine: ejs
+current: login
+extraJS: 'login'
+---
+<section class="container loginContainer">
+    <div class="loginContainer-wrap">
+        <h2>登入</h2>
+        <form>
+            <div class="form-item">
+                <input type="email" id="userEmail" placeholder="電子郵件" name="電子郵件" class="form-control">
+                <div class="alert-message">
+                    <p id="userEmail-message" data-message="電子郵件"></p>
+                </div>
+            </div>
+
+            <div class="form-item">
+                <input type="password" id="userPassword" placeholder="密碼 (8~12位英數字)" name="密碼" class="form-control">
+                <div class="alert-message">
+                    <p id="userPassword-message" data-message="密碼"></p>
+                </div>
+            </div>
+
+            <input type="button" value="登入" class="btn btn-gradient btn-login">
+        </form>
+    </div>
+</section>

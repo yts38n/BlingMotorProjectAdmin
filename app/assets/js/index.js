@@ -1,0 +1,3 @@
+(() => { 
+    location.replace('login.html');
+})();

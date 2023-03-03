@@ -1,0 +1,28 @@
+.gradient-text {
+    background-image: linear-gradient(90deg, #F20000, #FF7426);
+    background-clip: text;
+    color: transparent;
+}
+
+.btn-gradient {
+    @extend .bg-gradient;
+    font-size: 1.5rem;
+    font-weight: 500;
+    padding: 8px 20px;
+    color: $white;
+    border: none;
+    display: inline-block;
+    width: fit-content;
+}
+
+.sectionGeneral{
+    padding: 48px 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 40px;
+}
+
+.sectionTitle {
+    border-bottom: 1px solid #000;
+}
