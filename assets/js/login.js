@@ -6,7 +6,7 @@ function userLogin() {
   var userEmail = document.querySelector('#userEmail').value.toString();
   var userPassword = document.querySelector('#userPassword').value.toString();
   if (userEmail !== '' && userPassword !== '') {
-    axios.post("http://localhost:3000/api/v1/admin/login", {
+    axios.post("https://bling-motor-mock-server.onrender.com/api/v1/admin/login", {
       'data': {
         'userEmail': userEmail,
         'password': userPassword
