@@ -11,6 +11,12 @@
 - [後端畫面（店家）](https://github.com/yts38n/BlingMotorProjectAdmin)
   - [Github Pages](https://yts38n.github.io/BlingMotorProjectAdmin/)
 
+> 預設提供 2 組客戶帳號及1組管理員帳號 ***(請勿隨意更改管理員帳號密碼)*** 以供測試。  
+測試人員可自行新增客戶帳號。模擬伺服器在 [Render](https://render.com/)，會不定時重啟刪除所有後續添加的資料，恢復為原始狀態。
+>>客戶帳號 1: testUser01@gmail.com  (密碼: 00000000)
+>>客戶帳號 2: testUser02@gmail.com  (密碼: 00000000)
+>>管理員帳號 1: service@blingblingbike.com  (密碼: 00000000)
+
 
 ## 使用技術
 - Axios (發送網路請求進行API串接)
