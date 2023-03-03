@@ -205,14 +205,12 @@ function checkLogin() {
       blingMotorUserStatus['isLogin'] = true;
       blingMotorUserStatus['userInfo'] = JSON.parse(blingMotorUserInfo);
     } else {
-      console.log(location.pathname);
-      // if (location.pathname !== 'login.html') {
-      //     //alert('請先登入!!')
-      //     location.replace('login.html');
-      // }
+      if (location.pathname !== '/BlingMotorProjectAdmin/login.html') {
+        //alert('請先登入!!')
+        location.replace('login.html');
+      }
     }
   }
-
   renderNavbar();
 }
 function renderNavbar() {
