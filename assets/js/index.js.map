@@ -1,0 +1,1 @@
+{"version":3,"file":"index.js","names":["location","replace"],"sources":["index.js"],"sourcesContent":["(() => { \r\n    location.replace('login.html');\r\n})();"],"mappings":";;AAAA,CAAC,YAAM;EACHA,QAAQ,CAACC,OAAO,CAAC,YAAY,CAAC;AAClC,CAAC,GAAG"}
