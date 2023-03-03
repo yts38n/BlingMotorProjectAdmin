@@ -206,7 +206,7 @@ function checkLogin() {
       blingMotorUserStatus['userInfo'] = JSON.parse(blingMotorUserInfo);
     } else {
       if (location.pathname !== '/BlingMotorProjectAdmin/login.html') {
-        //alert('請先登入!!')
+        alert('請先登入!!');
         location.replace('login.html');
       }
     }

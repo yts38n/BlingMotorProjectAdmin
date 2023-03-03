@@ -25,7 +25,7 @@ document.querySelector('#confirmEdit').addEventListener('click', function () {
   }
 });
 function getCalendar(targetYear, targetMonth) {
-  axios.post("https://bling-motor-mock-server.onrender.com/api/v1/admin/calendar", {
+  axios.post("http://localhost:3000/api/v1/admin/calendar", {
     'data': {
       'token': blingMotorUserStatus['userInfo']['userEmail'],
       'calendar': {
@@ -60,7 +60,7 @@ function renderCalendarControl(calendarAvailable) {
   });
 }
 function updateCalendarNumber(newCalendar) {
-  axios.patch("https://bling-motor-mock-server.onrender.com/api/v1/admin/calendar", {
+  axios.patch("http://localhost:3000/api/v1/admin/calendar", {
     'data': {
       'token': blingMotorUserStatus['userInfo']['userEmail'],
       'newCalendar': {

@@ -22,7 +22,7 @@ tbody.addEventListener('click', function (e) {
   }
 });
 function getAllReservation() {
-  axios.post("https://bling-motor-mock-server.onrender.com/api/v1/admin/allBookings", {
+  axios.post("http://localhost:3000/api/v1/admin/allBookings", {
     'data': {
       'token': userToken
     }
@@ -73,7 +73,7 @@ function renderReservationDetails(targetElement) {
   targetElement.className += ' opended';
 }
 function getReservationCalendar(targetYear, targetMonth) {
-  axios.post("https://bling-motor-mock-server.onrender.com/api/v1/admin/calendar", {
+  axios.post("http://localhost:3000/api/v1/admin/calendar", {
     'data': {
       'token': userToken,
       'calendar': {
@@ -121,7 +121,7 @@ function updateReservation() {
   var customerMsg = document.querySelector('#customerMsg').value;
   var bookingStatus = document.querySelector('#bookingStatus').value;
   if (selectedDate !== currentEdit['date'] || selectedPlan !== currentEdit['plan'] || customerMsg !== currentEdit['userRemarks'] || bookingStatus !== currentEdit['status']) {
-    axios.patch("https://bling-motor-mock-server.onrender.com/api/v1/admin/allBookings", {
+    axios.patch("http://localhost:3000/api/v1/admin/allBookings", {
       'data': {
         'token': userToken,
         'bookingId': bookingId,
